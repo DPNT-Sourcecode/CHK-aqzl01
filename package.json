@@ -1,0 +1,38 @@
+{
+  "name": "tdl-warmup",
+  "version": "0.0.1",
+  "description": "Warmup code to bootstrap the challenge",
+  "scripts": {
+    "start": "node ./lib/send_command_to_server.js",
+    "test": "node ./node_modules/mocha/bin/mocha test/**/*.js",
+    "coverage": "nyc --reporter=json-summary --reporter=text npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianghionoiu/tdl-warmup.git"
+  },
+  "dependencies": {
+    "properties-reader": "~2.3.0",
+    "tdl-client-nodejs": "0.30.1"
+  },
+  "devDependencies": {
+    "nyc": "~17.1.0",
+    "prettier": "~3.5.3",
+    "diveSync": "~0.3.0",
+    "mocha": "~11.1.0"
+  },
+  "engines": {
+    "node": ">=22.14.0",
+    "npm": ">=11.2.0"
+  },
+  "keywords": [
+    "tdl",
+    "befaster"
+  ],
+  "author": "Julian Ghionoiu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/io-accelerate/tdl-runner-nodejs/issues"
+  },
+  "homepage": "https://github.com/io-accelerate/tdl-runner-nodejs#readme"
+}
